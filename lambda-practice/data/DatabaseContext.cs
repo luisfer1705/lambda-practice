@@ -11,7 +11,7 @@ namespace lamda_practice.Data
     {
 
         public DatabaseContext()
-            : base("EmployeesDB") 
+            : base("Name=EmployeesDB") 
             {
                 Database.SetInitializer<DatabaseContext>(new DatabaseContextInitializer<DatabaseContext>());
             }
